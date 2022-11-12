@@ -1,5 +1,11 @@
 p {
   margin: 0;
+  color: #434343;
+}
+
+::placeholder {
+  font-family: regular;
+  color: #b8b8b8;
 }
 
 .bordered {
@@ -11,7 +17,7 @@ p {
 }
 
 .primary {
-  color: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  color: #a02279;
 }
 
 .bg-primary {
@@ -50,7 +56,31 @@ p {
   font-family: bold;
 }
 
+.small {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+}
 .smallest {
   font-size: 14px;
   line-height: 35px;
+}
+
+.medium {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+
+.medium-alt {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
 }
