@@ -1,0 +1,28 @@
+.footer-position {
+  margin-top: auto;
+}
+
+.footer-padding {
+  padding: 58px 209px 37px 120px;
+}
+
+.footer-title {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-padding {
+    padding: 100px 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

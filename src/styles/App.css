@@ -1,0 +1,56 @@
+p {
+  margin: 0;
+}
+
+.bordered {
+  border: 1px dotted;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.primary {
+  color: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+
+.bg-primary {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+
+.white {
+  color: #ffffff;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.gray {
+  color: #1d1d1e;
+}
+
+.bg-gray {
+  background-color: #1d1d1e;
+}
+
+.light {
+  font-family: light;
+}
+
+.regular {
+  font-family: regular;
+}
+
+.semibold {
+  font-family: semibold;
+}
+
+.bold {
+  font-family: bold;
+}
+
+.smallest {
+  font-size: 14px;
+  line-height: 35px;
+}
