@@ -51,12 +51,12 @@ const Header = () => {
           </button>
         </Flex>
       </div>
-      <Flex className="mobile-header" jc="space-between">
+      <div className="mobile-header" jc="space-between">
         <img src={logo} height="20px" />
         <Flex className="ham" ai="center">
           <Icon icon={["fas", "fa-bars"]} className="primary" />
         </Flex>
-      </Flex>
+      </div>
     </Flex>
   );
 };
