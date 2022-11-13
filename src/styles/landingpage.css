@@ -1,5 +1,5 @@
 .landing-padding {
-  padding: 100px 119px 67px 100px;
+  padding: 70px 119px 67px 100px;
 }
 
 .sponsor-padding {
@@ -12,4 +12,19 @@
 
 .card-padding {
   padding: 16px;
+}
+
+.NFT-padding {
+  padding: 100px;
+}
+
+.nft-text {
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.nft-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
 }

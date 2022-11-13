@@ -2,6 +2,10 @@
   padding: 52px 100px;
 }
 
+.modal-padding {
+  padding: 24px 32px;
+}
+
 .header-content {
   display: flex;
   width: 100%;

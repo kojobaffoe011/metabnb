@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import Flex from "../components/layout/Flex";
 import "../styles/header.css";
 import logo from "../assets/icons/logo.svg";
+import CWModal from "./modal/CWModal";
 
 const Header = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const handleOpenModal = useCallback(() => setModalIsOpen(true), []);
+
+  const handleCloseModal = useCallback(() => setModalIsOpen(false), []);
+
   return (
     <Flex className="header-padding ">
+      <CWModal isOpen={modalIsOpen} handleCancel={handleCloseModal} />
       <div className="header-content ">
         <div className="" style={{ flexBasis: "20%" }}>
           <img src={logo} alt="" />
@@ -24,6 +32,7 @@ const Header = () => {
         >
           <button
             className="bg-primary"
+            onClick={handleOpenModal}
             style={{
               padding: "15px 26px",
               borderRadius: "10px",

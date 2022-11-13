@@ -11,8 +11,8 @@ import copyright from "../assets/icons/copyright.svg";
 const Links = (props) => {
   return (
     <Flex stack={true}>
-      <Flex stack={true} spacing={16}>
-        <Flex stack={true} spacing={23}>
+      <Flex stack={true} className="">
+        <Flex stack={true} spacing={23} className="">
           <p className="bold white footer-title">{props.title}</p>
           <p className="regular white smallest">{props.subtitleOne}</p>
         </Flex>
