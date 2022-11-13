@@ -3,6 +3,7 @@ import Flex from "../components/layout/Flex";
 import "../styles/header.css";
 import logo from "../assets/icons/logo.svg";
 import CWModal from "./modal/CWModal";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -19,8 +20,13 @@ const Header = () => {
           <img src={logo} alt="" />
         </div>
         <Flex className=" grow" jc="center" ai="center" spacing={48}>
-          <p className="regular">Home</p>
-          <p className="regular">Place to stay</p>
+          <Link to="/">
+            <p className="regular">Home</p>
+          </Link>
+          <Link to="/place-to-stay">
+            <p className="regular">Place to stay</p>
+          </Link>
+
           <p className="regular">NFTs</p>
           <p className="regular">Community</p>
         </Flex>
