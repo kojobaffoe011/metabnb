@@ -29,10 +29,10 @@ const Footer = () => {
     <div className="footer-position footer-padding  bg-gray">
       <Grid span={12}>
         <GridItem span={3} md={12} className="">
-          <Flex stack={true}>
-            <Flex stack={true} spacing={56.12}>
-              <Flex stack={true} spacing={96}>
-                <img src={logo} alt="" />
+          <Flex stack={true} className="" ai="flex-start">
+            <div className="logo-grid">
+              <div className="logo-grid-content">
+                <img src={logo} alt="" className="logo" />
                 <Flex spacing={32}>
                   <Flex spacing={36.5}>
                     <img src={facebook} alt="" />
@@ -40,12 +40,12 @@ const Footer = () => {
                   </Flex>
                   <img src={twitter} alt="" />
                 </Flex>
-              </Flex>
+              </div>
               <Flex spacing={9.5}>
                 <img src={copyright} alt="" />
                 <p className="white regular">2022 Metabnb</p>
               </Flex>
-            </Flex>
+            </div>
           </Flex>
         </GridItem>
         <GridItem span={3} md={12} className="">

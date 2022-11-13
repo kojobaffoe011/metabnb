@@ -2,8 +2,10 @@ import React, { useCallback, useState } from "react";
 import Flex from "../components/layout/Flex";
 import "../styles/header.css";
 import logo from "../assets/icons/logo.svg";
+import logo1 from "../assets/icons/mobile-logo.svg";
 import CWModal from "./modal/CWModal";
 import { Link } from "react-router-dom";
+import Icon from "./icon/Icon";
 
 const Header = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -49,14 +51,12 @@ const Header = () => {
           </button>
         </Flex>
       </div>
-      <div className="mobile-header ">
-        <p style={{ flexBasis: "90%" }} className="">
-          logo
-        </p>
-        <div className="ham">
-          <p>ham</p>
-        </div>
-      </div>
+      <Flex className="mobile-header" jc="space-between">
+        <img src={logo} height="20px" />
+        <Flex className="ham" ai="center">
+          <Icon icon={["fas", "fa-bars"]} className="primary" />
+        </Flex>
+      </Flex>
     </Flex>
   );
 };

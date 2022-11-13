@@ -15,6 +15,7 @@ export const Modal = (props) => {
       style={defaultModalStyles}
       isOpen={isOpen}
       onRequestClose={handleCancel}
+      closeTimeoutMS={500}
     >
       {cloneElement(children)}
     </ReactModal>

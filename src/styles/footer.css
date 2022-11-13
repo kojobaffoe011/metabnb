@@ -6,6 +6,22 @@
   padding: 58px 209px 37px 120px;
 }
 
+.logo {
+  width: 100%;
+}
+
+.logo-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 56.12px;
+}
+
+.logo-grid-content {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
 .footer-title {
   font-size: 18px;
   line-height: 22px;
@@ -18,11 +34,27 @@
 
 @media screen and (max-width: 768px) {
   .footer-padding {
-    padding: 100px 20px;
+    padding: 50px 20px;
   }
 
   .footer-links {
     display: flex;
     justify-content: flex-start;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .logo-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .logo-grid-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
   }
 }

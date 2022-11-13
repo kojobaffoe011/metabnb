@@ -21,7 +21,7 @@ const WalletOption = (props) => {
       <img src={props.image} style={{ flexBasis: "10%" }} />
       <Flex className=" grow" jc="space-between">
         <p className="bold">{props.text}</p>
-        <Icon icon={["fas", "fa-chevron-right"]} style={{ color: "#959DA6" }} />
+        <Icon icon={["fas", "fa-chevron-right"]} color="#959DA6" />
       </Flex>
     </Flex>
   );

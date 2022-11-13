@@ -6,8 +6,24 @@
   padding: 15.5px 144px;
 }
 
+.sponsor {
+  display: flex;
+  gap: 264px;
+}
+
+.inspiration-content {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+}
+
 .inspiration-padding {
   padding: 60px 100px;
+}
+
+.inspiration-heading {
+  display: flex;
+  justify-content: center;
 }
 
 .card-padding {
@@ -27,4 +43,199 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
+}
+
+.nft-description {
+  padding-top: 86px;
+}
+
+.nft-content {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.nft-content-alt {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.more-button {
+  padding: 14px 33px;
+  border-radius: 8px;
+  border: none;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.home-input {
+  padding: 19px 0px 20px 15px;
+  width: 50%;
+  border: 1px solid #a3a3a3;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.home-button {
+  padding: 17px 87px;
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.button-text {
+  font-size: 14px;
+}
+
+.sponsor-mobile {
+  padding: 16px;
+}
+
+.slider {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-padding {
+    padding: 16px;
+  }
+
+  .sponsor-padding {
+    padding: 16px;
+  }
+
+  .sponsor {
+    display: none;
+  }
+
+  .inspiration-padding {
+    padding: 30px 16px;
+  }
+
+  .inspiration-heading {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .inspiration-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .NFT-padding {
+    padding: 16px;
+  }
+
+  .nft-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+  }
+
+  .nft-text {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .nft-description {
+    padding-top: 30px;
+  }
+
+  .nft-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .nft-content-alt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .more-button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+  }
+
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .home-input {
+    padding: 10px 0px 10px 10px;
+    width: 50%;
+    border: 1px solid #a3a3a3;
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .home-button {
+    padding: 5px 30px;
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  .button-text {
+    font-size: 10px;
+  }
+
+  .sponsor-mobile {
+    padding: 16px;
+  }
+
+  .slider {
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider::after,
+  .slider::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    z-index: 2;
+  }
+
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slider::after {
+    left: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  .slide-track {
+    display: flex;
+    width: calc(250px * 6);
+    animation: scroll 10s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-400px);
+    }
+  }
+
+  .slide {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
 }

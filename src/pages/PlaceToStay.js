@@ -20,12 +20,13 @@ import image13 from "../assets/images/place-to-stay/image13.svg";
 import image14 from "../assets/images/place-to-stay/image14.svg";
 import image15 from "../assets/images/place-to-stay/image15.svg";
 import image16 from "../assets/images/place-to-stay/image16.svg";
+import Icon from "../components/icon/Icon";
 
 const NavBar = () => {
   return (
-    <Flex spacing={65}>
+    <div className=" navbar">
       <Flex className="" spacing={48} ai="center">
-        <p className="regular">Resturant</p>
+        <p className="regular">Restaurant</p>
         <p className="regular">Cottage</p>
         <p className="regular">Castle</p>
         <p className="regular">fantast city</p>
@@ -44,6 +45,50 @@ const NavBar = () => {
           }}
         >
           <Flex spacing={42} ai="center">
+            <p className="regular">Restaurant</p>
+            <Flex jc="flex-end" className="">
+              <img src={filter} alt="" />
+            </Flex>
+          </Flex>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const NavMobile = () => {
+  return (
+    <div className="mobile-navbar">
+      <div className="">
+        <button
+          style={{
+            padding: "14px 13px",
+            background: `linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%)`,
+            border: "1px solid #B4B4B4",
+            borderRadius: "8px",
+          }}
+        >
+          <Flex spacing={10} ai="center">
+            <p className="regular">Restaurant</p>
+            <Flex jc="flex-end" className="">
+              <Icon
+                icon={["fas", "fa-chevron-down"]}
+                style={{ color: "#959DA6" }}
+              />
+            </Flex>
+          </Flex>
+        </button>
+      </div>
+      <div className="">
+        <button
+          style={{
+            padding: "14px 13px",
+            background: `linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%)`,
+            border: "1px solid #B4B4B4",
+            borderRadius: "8px",
+          }}
+        >
+          <Flex spacing={42} ai="center">
             <p className="regular">Location</p>
             <Flex jc="flex-end" className="">
               <img src={filter} alt="" />
@@ -51,59 +96,59 @@ const NavBar = () => {
           </Flex>
         </button>
       </div>
-    </Flex>
+    </div>
   );
 };
 
 const Cards = () => {
   return (
     <Grid span={12}>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image1} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image2} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image3} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image4} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image5} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image6} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image7} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image8} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image9} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image10} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image11} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image12} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image13} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image14} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image15} />
       </GridItem>
-      <GridItem span={3}>
+      <GridItem span={3} md={12}>
         <Card image={image16} />
       </GridItem>
     </Grid>
@@ -112,10 +157,11 @@ const Cards = () => {
 
 const PlaceToStay = () => {
   return (
-    <Flex stack={true} spacing={75} className=" stay-padding">
+    <div className=" stay-padding stay-content">
       <NavBar />
+      <NavMobile />
       <Cards />
-    </Flex>
+    </div>
   );
 };
 

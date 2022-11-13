@@ -21,12 +21,7 @@ const Home = () => {
   return (
     <Grid span={12}>
       <GridItem span={7} md={12} className="">
-        <Flex
-          stack={true}
-          spacing={48}
-          className=""
-          style={{ paddingTop: "30px" }}
-        >
+        <div className="home-content" style={{ paddingTop: "30px" }}>
           <p className="regular medium">
             Rent a <span className="bold primary">Place</span> away from <br />
             <span className="bold primary"> Home</span> in the{" "}
@@ -40,31 +35,19 @@ const Home = () => {
           </p>
           <Flex>
             <input
-              style={{
-                padding: "19px 0px 20px 15px",
-                width: "50%",
-                border: "1px solid #A3A3A3",
-                borderRadius: "8px 0px 0px 8px",
-              }}
+              className="home-input"
               type="text"
               placeholder="Search for location"
             />
-            <button
-              style={{
-                padding: "17px 87px",
-                border: "none",
-                borderRadius: "0px 8px 8px 0px",
-              }}
-              className="bg-primary"
-            >
-              <p className="white regular">Search</p>
+            <button className="bg-primary home-button">
+              <p className="white regular button-text">Search</p>
             </button>
           </Flex>
-        </Flex>
+        </div>
       </GridItem>
       <GridItem span={5} md={12} className="">
         <Flex className="" jc="flex-end">
-          <img src={metaimg} />
+          <img src={metaimg} style={{ width: "100%" }} />
         </Flex>
       </GridItem>
     </Grid>
@@ -73,99 +56,74 @@ const Home = () => {
 
 const Sponsors = () => {
   return (
-    <Flex className=" sponsor-padding bg-primary" spacing={264}>
+    <div className="sponsor sponsor-padding bg-primary">
       <img src={mbtoken} alt="" />
       <img src={metamask} alt="" />
       <img src={opensea} alt="" />
-    </Flex>
+    </div>
   );
 };
 
-// const Card = (props) => {
-//   return (
-//     <Flex
-//       className="card-padding"
-//       spacing={16}
-//       stack={true}
-//       style={{ border: "1px solid #D7D7D7", borderRadius: "15px" }}
-//     >
-//       <div
-//         className=""
-//         style={{
-//           borderRadius: "15px",
-//           position: "relative",
-//           overflow: "hidden",
-//         }}
-//       >
-//         <img
-//           src={props.image}
-//           alt=""
-//           style={{ width: "100%", height: "100%", objectFit: "cover" }}
-//         />
-//         <img
-//           src={heart}
-//           alt=""
-//           style={{ position: "absolute", top: "10px", right: "10px" }}
-//         />
-//       </div>
-//       <Flex spacing={10} stack={true}>
-//         <Flex style={{ width: "100%" }}>
-//           <p className=" regular card-text" style={{ flexBasis: "40%" }}>
-//             Desert king
-//           </p>
-//           <Flex className=" grow" jc="flex-end">
-//             <p className="regular bold card-text">1MBT per night</p>
-//           </Flex>
-//         </Flex>
-//         <Flex style={{ width: "100%" }}>
-//           <p className=" regular card-text" style={{ flexBasis: "40%" }}>
-//             2345km away
-//           </p>
-//           <Flex className=" grow" jc="flex-end">
-//             <p className="regular  card-text">available for 2weeks stay</p>
-//           </Flex>
-//         </Flex>
-//         <div style={{ width: "92px card-text" }}>
-//           <img src={star} alt="" />
-//         </div>
-//       </Flex>
-//     </Flex>
-//   );
-// };
+const SponsorMobile = () => {
+  return (
+    <div className="slider bg-primary ">
+      <div className="slide-track">
+        <div className="slide">
+          <img src={mbtoken} height="20px" />
+        </div>
+        <div className="slide">
+          <img src={metamask} height="20px" />
+        </div>
+        <div className="slide">
+          <img src={opensea} height="20px" />
+        </div>
+        <div className="slide">
+          <img src={mbtoken} height="20px" />
+        </div>
+        <div className="slide">
+          <img src={metamask} height="20px" />
+        </div>
+        <div className="slide">
+          <img src={opensea} height="20px" />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Inspiration = () => {
   return (
-    <Flex className=" inspiration-padding" stack={true} spacing={43}>
-      <Flex jc="center" className="">
+    <div className=" inspiration-padding inspiration-content">
+      <div jc="center" className="inspiration-heading">
         <p className=" bold medium-alt">Inspiration for your next adventure</p>
-      </Flex>
+      </div>
       <Grid span={12}>
-        <GridItem span={3} className="">
+        <GridItem span={3} md={12} className="">
           <Card image={image1} />
         </GridItem>
-        <GridItem span={3} className="">
+        <GridItem span={3} md={12} className="">
           <Card image={image2} />
         </GridItem>
-        <GridItem span={3} className="">
+        <GridItem span={3} md={12} className="">
           <Card image={image3} />
         </GridItem>
-        <GridItem span={3} className="">
+        <GridItem span={3} md={12} className="">
           <Card image={image4} />
         </GridItem>
-        <GridItem span={3} className="">
+        <GridItem span={3} md={12} className="">
           <Card image={image5} />
         </GridItem>
-        <GridItem span={3} className="">
+        <GridItem span={3} md={12} className="">
           <Card image={image6} />
         </GridItem>
-        <GridItem span={3} className="">
+        <GridItem span={3} md={12} className="">
           <Card image={image7} />
         </GridItem>
-        <GridItem span={3} className="">
+        <GridItem span={3} md={12} className="">
           <Card image={image8} />
         </GridItem>
       </Grid>
-    </Flex>
+    </div>
   );
 };
 
@@ -173,32 +131,33 @@ const NFTs = () => {
   return (
     <div className=" NFT-padding bg-primary">
       <Grid span={12}>
-        <GridItem span={4} className="" style={{ paddingTop: "86px" }}>
-          <Flex stack={true} spacing={58}>
-            <Flex stack={true} spacing={35}>
+        <GridItem span={4} md={12} className=" nft-description">
+          <div className="nft-content">
+            <div className="nft-content-alt">
               <p className="white bold nft-title">Metabnb NFTs</p>
               <p className="white regular nft-text">
                 Discover our NFT gift cards collection. Loyal customers gets
                 amazing gift cards which are traded as NFTs. These NFTs gives
                 our cutomer access to loads of our exclusive services.
               </p>
-            </Flex>
+            </div>
             <div>
               <button
-                style={{
-                  padding: "14px 33px",
-                  borderRadius: "8px",
-                  border: "none",
-                }}
+                className="more-button"
+                // style={{
+                //   padding: "14px 33px",
+                //   borderRadius: "8px",
+                //   border: "none",
+                // }}
               >
                 <p className="regular primary">Learn more</p>
               </button>
             </div>
-          </Flex>
+          </div>
         </GridItem>
-        <GridItem span={8} className="">
+        <GridItem span={8} md={12} className="">
           <Flex jc="flex-end">
-            <img src={nft} alt="" />
+            <img src={nft} alt="" style={{ width: "100%" }} />
           </Flex>
         </GridItem>
       </Grid>
@@ -213,6 +172,7 @@ const LandingPage = () => {
         <Home />
       </div>
       <Sponsors />
+      <SponsorMobile />
       <Inspiration />
       <NFTs />
     </div>

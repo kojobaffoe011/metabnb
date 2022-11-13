@@ -6,9 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const startIconLibrary = () => {
-  library.add(faXmark, faChevronRight);
+  library.add(faXmark, faChevronRight, faChevronDown, faBars);
 };
 
 const Icon = ({ icon, size, color, style, className, ...rest }) => {

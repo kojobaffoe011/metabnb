@@ -88,3 +88,45 @@ a {
   font-size: 12px;
   line-height: 13px;
 }
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+@media screen and (max-width: 768px) {
+  ::placeholder {
+    font-family: regular;
+    font-size: 10px;
+    color: #b8b8b8;
+  }
+  .medium {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+  }
+
+  .medium-alt {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .small {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
