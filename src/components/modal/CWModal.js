@@ -29,7 +29,11 @@ const CWModal = (props) => {
           style={{ padding: "24px 32px" }}
         >
           <p className="bold">Connect Wallet</p>
-          <Icon icon={["fas", "xmark"]} onClick={props.handleCancel} />
+          <Icon
+            icon={["fas", "xmark"]}
+            onClick={props.handleCancel}
+            size="lg"
+          />
         </Flex>
         <Flex
           stack
