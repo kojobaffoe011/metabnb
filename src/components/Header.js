@@ -22,6 +22,7 @@ const SideMenu = () => {
       icon={["fas", "xmark"]}
       className="primary"
       onClick={() => setOpenSideMenu(!openSideMenu)}
+      size="xl"
     />
   );
   const hamIcon = (
@@ -29,15 +30,18 @@ const SideMenu = () => {
       icon={["fas", "fa-bars"]}
       className="primary"
       onClick={() => setOpenSideMenu(!openSideMenu)}
+      size="xl"
     />
   );
 
   return (
-    <div className="mobile-header" jc="space-between">
+    <div className="mobile-header">
       <CWModal isOpen={modalIsOpen} handleCancel={handleCloseModal} />
-      <Link to="/">
-        <img src={logo} height="20px" />{" "}
-      </Link>
+      <Flex ai="center">
+        <Link to="/">
+          <img src={logo} height="20px" />{" "}
+        </Link>
+      </Flex>
       <Flex className="ham" ai="">
         {openSideMenu ? closeIcon : hamIcon}
       </Flex>
