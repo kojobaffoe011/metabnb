@@ -14,11 +14,13 @@
   display: flex;
   flex-direction: column;
   gap: 56.12px;
+  align-items: flex-start;
 }
 
 .logo-grid-content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 96px;
 }
 
