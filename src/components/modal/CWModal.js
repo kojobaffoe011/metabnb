@@ -8,29 +8,24 @@ import walletconnect from "../../assets/icons/walletconnect.svg";
 
 const WalletOption = (props) => {
   return (
-    <Flex
-      className=""
-      style={{
-        padding: "12px 20px",
-        border: "1px solid #CFD8DC",
-        borderRadius: "12px",
-      }}
-      ai="center"
-      spacing={16}
-    >
+    <div className="walletoption" ai="center" spacing={16}>
       <img src={props.image} style={{ flexBasis: "10%" }} />
       <Flex className=" grow" jc="space-between">
-        <p className="bold">{props.text}</p>
-        <Icon icon={["fas", "fa-chevron-right"]} color="#959DA6" />
+        <p className="bold wallet-text">{props.text}</p>
+        <Icon
+          icon={["fas", "fa-chevron-right"]}
+          color="#959DA6"
+          className="show"
+        />
       </Flex>
-    </Flex>
+    </div>
   );
 };
 
 const CWModal = (props) => {
   return (
     <Modal {...props}>
-      <Flex stack={true} className=" ">
+      <Flex stack={true}>
         <Flex
           jc="space-between"
           ai="center"

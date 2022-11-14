@@ -1,10 +1,10 @@
 export const defaultModalStyles = {
   overlay: {
     background: "rgba(0,0,0,0.7)",
-    zIndex: 1,
+    zIndex: 5,
   },
   content: {
-    borderRadius: "8px",
+    borderRadius: "12px",
     background: "#ffffff",
     margin: "auto auto",
     border: 0,
