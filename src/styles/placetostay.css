@@ -18,13 +18,6 @@
   display: none;
 }
 
-.show {
-  display: block;
-}
-.hide {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
   .stay-padding {
     padding: 16px;

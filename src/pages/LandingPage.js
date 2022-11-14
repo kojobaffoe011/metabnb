@@ -27,12 +27,21 @@ const Home = () => {
             <span className="bold primary"> Home</span> in the{" "}
             <span className="bold primary">Metaverse</span>
           </p>
+          <div className="hide">
+            <p className="regular small ">
+              we provide you access to luxury and affordable houses in the
+              metaverse, get a chance to turn your imagination to reality at
+              your comfort zone
+            </p>
+          </div>
+          <div className="show">
+            <p className="regular small ">
+              we provide you access to luxury and affordable houses <br />
+              in the metaverse, get a chance to turn your <br />
+              imagination to reality at your comfort zone
+            </p>
+          </div>
 
-          <p className="regular small">
-            we provide you access to luxury and affordable houses <br />
-            in the metaverse, get a chance to turn your <br />
-            imagination to reality at your comfort zone
-          </p>
           <Flex>
             <input
               className="home-input"
