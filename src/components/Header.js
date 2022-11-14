@@ -35,7 +35,9 @@ const SideMenu = () => {
   return (
     <div className="mobile-header" jc="space-between">
       <CWModal isOpen={modalIsOpen} handleCancel={handleCloseModal} />
-      <img src={logo} height="20px" />
+      <Link to="/">
+        <img src={logo} height="20px" />{" "}
+      </Link>
       <Flex className="ham" ai="">
         {openSideMenu ? closeIcon : hamIcon}
       </Flex>
