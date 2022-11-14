@@ -37,11 +37,11 @@ const SideMenu = () => {
   return (
     <div className="mobile-header">
       <CWModal isOpen={modalIsOpen} handleCancel={handleCloseModal} />
-      <Flex ai="center">
-        <Link to="/">
-          <img src={logo} height="20px" />{" "}
-        </Link>
-      </Flex>
+
+      <Link to="/">
+        <img src={logo} height="22px" />{" "}
+      </Link>
+
       <Flex className="ham" ai="">
         {openSideMenu ? closeIcon : hamIcon}
       </Flex>
