@@ -32,7 +32,10 @@ const Footer = () => {
           <Flex stack={true} className="" ai="flex-start">
             <div className="logo-grid">
               <div className="logo-grid-content">
-                <img src={logo} alt="" className="logo" />
+                <Flex>
+                  <img src={logo} alt="" className="logo" />
+                </Flex>
+
                 <Flex spacing={32}>
                   <Flex spacing={36.5}>
                     <img src={facebook} alt="" />
