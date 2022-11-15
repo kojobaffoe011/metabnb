@@ -7,6 +7,20 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+li {
+  padding: 10px 15px;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
 ::placeholder {
   font-family: regular;
   color: #b8b8b8;
@@ -105,7 +119,7 @@ a {
   transform: translateX(-100px);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   ::placeholder {
     font-family: regular;
     font-size: 10px;

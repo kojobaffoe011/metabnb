@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Flex from "../components/layout/Flex";
 import "../styles/placetostay.css";
 import Grid, { GridItem } from "../components/layout/Grid";
@@ -60,24 +60,7 @@ const NavMobile = () => {
   return (
     <div className="mobile-navbar">
       <div className="">
-        <button
-          style={{
-            padding: "14px 13px",
-            background: `linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%)`,
-            border: "1px solid #B4B4B4",
-            borderRadius: "8px",
-          }}
-        >
-          <Flex spacing={10} ai="center">
-            <p className="regular">Restaurant</p>
-            <Flex jc="flex-end" className="">
-              <Icon
-                icon={["fas", "fa-chevron-down"]}
-                style={{ color: "#959DA6" }}
-              />
-            </Flex>
-          </Flex>
-        </button>
+        <DropDown />
       </div>
       <div className="">
         <button
@@ -100,55 +83,114 @@ const NavMobile = () => {
   );
 };
 
+const DropdownItem = (props) => {
+  return (
+    <li className="dropdownItem">
+      <a>
+        <p className="regular small">{props.text}</p>
+      </a>
+    </li>
+  );
+};
+
+const DropDown = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleDropdown = () => {
+    return setOpen(!open);
+  };
+
+  return (
+    <div>
+      <div className="menu container">
+        <div className="menu-trigger">
+          <button
+            style={{
+              padding: "14px 13px",
+              background: `linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%)`,
+              border: "1px solid #B4B4B4",
+              borderRadius: "8px",
+            }}
+            onClick={handleDropdown}
+          >
+            <Flex spacing={10} ai="center">
+              <p className="regular">Restaurant</p>
+              <Flex jc="flex-end" className="">
+                <Icon
+                  icon={["fas", "fa-chevron-down"]}
+                  style={{ color: "#959DA6" }}
+                />
+              </Flex>
+            </Flex>
+          </button>
+        </div>
+        {open && (
+          <div className="dropdown-menu">
+            <ul>
+              <DropdownItem text={"Cottage"} />
+              <DropdownItem text={"Castle"} />
+              <DropdownItem text={"fantast city"} />
+              <DropdownItem text={"beach"} />
+              <DropdownItem text={"Carbins"} />
+              <DropdownItem text={"Off-grid"} />
+              <DropdownItem text={"Farm"} />
+            </ul>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
 const Cards = () => {
   return (
     <Grid span={12}>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image1} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image2} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image3} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image4} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image5} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image6} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image7} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image8} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image9} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image10} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image11} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image12} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image13} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image14} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image15} />
       </GridItem>
-      <GridItem span={3} md={12}>
+      <GridItem span={3} md={6} sm={12}>
         <Card image={image16} />
       </GridItem>
     </Grid>

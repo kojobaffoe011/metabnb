@@ -35,7 +35,7 @@ const SideMenu = () => {
   );
 
   return (
-    <div className="mobile-header">
+    <div className="mobile-header  ">
       <CWModal isOpen={modalIsOpen} handleCancel={handleCloseModal} />
 
       <Link to="/">
@@ -46,7 +46,10 @@ const SideMenu = () => {
         {openSideMenu ? closeIcon : hamIcon}
       </Flex>
       {openSideMenu && (
-        <div className="mobile-nav " style={{ padding: "30px 0px " }}>
+        <div
+          className="mobile-nav bordered"
+          style={{ padding: "30px 0px", zIndex: "3" }}
+        >
           <Flex
             stack
             className=" grow"
@@ -100,7 +103,7 @@ const Header = () => {
   const handleCloseModal = useCallback(() => setModalIsOpen(false), []);
 
   return (
-    <Flex className="header-padding ">
+    <Flex className="header-padding bg-white ">
       <CWModal isOpen={modalIsOpen} handleCancel={handleCloseModal} />
 
       <div className="header-content ">

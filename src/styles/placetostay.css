@@ -18,7 +18,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .stay-padding {
     padding: 16px;
   }
@@ -37,5 +37,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #a19696;
+    border-radius: 8px;
+    position: absolute;
+    top: 130px;
+    z-index: 2;
+  }
+
+  .dropdown-menu ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .dropdown-menu ul li:hover {
+    color: #a02279;
+  }
+
+  .dropdown-menu::before {
+    content: "";
+    background: #fff;
+    transform: rotate(45deg);
   }
 }
