@@ -47,7 +47,7 @@ const SideMenu = () => {
       </Flex>
       {openSideMenu && (
         <div
-          className="mobile-nav bordered"
+          className="mobile-nav "
           style={{ padding: "30px 0px", zIndex: "3" }}
         >
           <Flex

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Flex from "../components/layout/Flex";
 import "../styles/placetostay.css";
 import Grid, { GridItem } from "../components/layout/Grid";
@@ -45,7 +45,7 @@ const NavBar = () => {
           }}
         >
           <Flex spacing={42} ai="center">
-            <p className="regular">Restaurant</p>
+            <p className="regular">Location</p>
             <Flex jc="flex-end" className="">
               <img src={filter} alt="" />
             </Flex>
@@ -58,7 +58,7 @@ const NavBar = () => {
 
 const NavMobile = () => {
   return (
-    <div className="mobile-navbar">
+    <div className="mobile-navbar ">
       <div className="">
         <DropDown />
       </div>
@@ -93,7 +93,7 @@ const DropdownItem = (props) => {
   );
 };
 
-const DropDown = () => {
+const DropDown = (props) => {
   const [open, setOpen] = useState(false);
 
   const handleDropdown = () => {
@@ -197,9 +197,9 @@ const Cards = () => {
   );
 };
 
-const PlaceToStay = () => {
+const PlaceToStay = (props) => {
   return (
-    <div className=" stay-padding stay-content">
+    <div className=" stay-padding stay-content ">
       <NavBar />
       <NavMobile />
       <Cards />

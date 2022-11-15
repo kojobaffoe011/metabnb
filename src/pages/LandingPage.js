@@ -107,28 +107,28 @@ const Inspiration = () => {
         <p className=" bold medium-alt">Inspiration for your next adventure</p>
       </div>
       <Grid span={12}>
-        <GridItem span={3} md={12} className="">
+        <GridItem span={3} md={6} sm={12} className="">
           <Card image={image1} />
         </GridItem>
-        <GridItem span={3} md={12} className="">
+        <GridItem span={3} md={6} sm={12} className="">
           <Card image={image2} />
         </GridItem>
-        <GridItem span={3} md={12} className="">
+        <GridItem span={3} md={6} sm={12} className="">
           <Card image={image3} />
         </GridItem>
-        <GridItem span={3} md={12} className="">
+        <GridItem span={3} md={6} sm={12} className="">
           <Card image={image4} />
         </GridItem>
-        <GridItem span={3} md={12} className="">
+        <GridItem span={3} md={6} sm={12} className="">
           <Card image={image5} />
         </GridItem>
-        <GridItem span={3} md={12} className="">
+        <GridItem span={3} md={6} sm={12} className="">
           <Card image={image6} />
         </GridItem>
-        <GridItem span={3} md={12} className="">
+        <GridItem span={3} md={6} sm={12} className="">
           <Card image={image7} />
         </GridItem>
-        <GridItem span={3} md={12} className="">
+        <GridItem span={3} md={6} sm={12} className="">
           <Card image={image8} />
         </GridItem>
       </Grid>
