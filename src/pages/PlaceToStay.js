@@ -200,11 +200,11 @@ const Cards = () => {
 const PlaceToStay = (props) => {
   return (
     <div className=" stay-padding stay-contepng">
-      <Flex stack spacing={75}>
+      <div className="navcard-spacing">
         <NavBar />
         <NavMobile />
         <Cards />
-      </Flex>
+      </div>
     </div>
   );
 };

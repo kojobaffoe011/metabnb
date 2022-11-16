@@ -18,6 +18,12 @@
   display: none;
 }
 
+.navcard-spacing {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+
 @media screen and (max-width: 1023px) {
   .stay-padding {
     padding: 16px;
@@ -37,6 +43,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .navcard-spacing {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   .dropdown-menu {
