@@ -4,22 +4,22 @@ import "../styles/placetostay.css";
 import Grid, { GridItem } from "../components/layout/Grid";
 import Card from "../components/Card";
 import filter from "../assets/icons/filter.svg";
-import image1 from "../assets/images/place-to-stay/image1.svg";
-import image2 from "../assets/images/place-to-stay/image2.svg";
-import image3 from "../assets/images/place-to-stay/image3.svg";
-import image4 from "../assets/images/place-to-stay/image4.svg";
-import image5 from "../assets/images/place-to-stay/image5.svg";
-import image6 from "../assets/images/place-to-stay/image6.svg";
-import image7 from "../assets/images/place-to-stay/image7.svg";
-import image8 from "../assets/images/place-to-stay/image8.svg";
-import image9 from "../assets/images/place-to-stay/image9.svg";
-import image10 from "../assets/images/place-to-stay/image10.svg";
-import image11 from "../assets/images/place-to-stay/image11.svg";
-import image12 from "../assets/images/place-to-stay/image12.svg";
-import image13 from "../assets/images/place-to-stay/image13.svg";
-import image14 from "../assets/images/place-to-stay/image14.svg";
-import image15 from "../assets/images/place-to-stay/image15.svg";
-import image16 from "../assets/images/place-to-stay/image16.svg";
+import image1 from "../assets/images/place-to-stay/image1.png";
+import image2 from "../assets/images/place-to-stay/image2.png";
+import image3 from "../assets/images/place-to-stay/image3.png";
+import image4 from "../assets/images/place-to-stay/image4.png";
+import image5 from "../assets/images/place-to-stay/image5.png";
+import image6 from "../assets/images/place-to-stay/image6.png";
+import image7 from "../assets/images/place-to-stay/image7.png";
+import image8 from "../assets/images/place-to-stay/image8.png";
+import image9 from "../assets/images/place-to-stay/image9.png";
+import image10 from "../assets/images/place-to-stay/image10.png";
+import image11 from "../assets/images/place-to-stay/image11.png";
+import image12 from "../assets/images/place-to-stay/image12.png";
+import image13 from "../assets/images/place-to-stay/image13.png";
+import image14 from "../assets/images/place-to-stay/image14.png";
+import image15 from "../assets/images/place-to-stay/image15.png";
+import image16 from "../assets/images/place-to-stay/image16.png";
 import Icon from "../components/icon/Icon";
 
 const NavBar = () => {
@@ -199,7 +199,7 @@ const Cards = () => {
 
 const PlaceToStay = (props) => {
   return (
-    <div className=" stay-padding stay-content ">
+    <div className=" stay-padding stay-contepng">
       <NavBar />
       <NavMobile />
       <Cards />

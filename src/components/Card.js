@@ -7,10 +7,13 @@ import Grid, { GridItem } from "../components/layout/Grid";
 const Card = (props) => {
   return (
     <Flex
-      className="card-padding"
+      className="card-padding "
       spacing={16}
       stack={true}
-      style={{ border: "1px solid #D7D7D7", borderRadius: "15px" }}
+      style={{
+        border: "1px solid #D7D7D7",
+        borderRadius: "15px",
+      }}
     >
       <div
         className=""

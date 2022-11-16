@@ -5,16 +5,16 @@ import "../styles/landingpage.css";
 import mbtoken from "../assets/icons/mbtoken.svg";
 import metamask from "../assets/icons/metamask.svg";
 import opensea from "../assets/icons/opensea.svg";
-import image1 from "../assets/images/image1.svg";
-import image2 from "../assets/images/image2.svg";
-import image3 from "../assets/images/image3.svg";
-import image4 from "../assets/images/image4.svg";
-import image5 from "../assets/images/image5.svg";
-import image6 from "../assets/images/image6.svg";
-import image7 from "../assets/images/image7.svg";
-import image8 from "../assets/images/image8.svg";
-import nft from "../assets/images/nft.svg";
-import metaimg from "../assets/images/metaimg.svg";
+import image1 from "../assets/images/image1.png";
+import image2 from "../assets/images/image2.png";
+import image3 from "../assets/images/image3.png";
+import image4 from "../assets/images/image4.png";
+import image5 from "../assets/images/image5.png";
+import image6 from "../assets/images/image6.png";
+import image7 from "../assets/images/image7.png";
+import image8 from "../assets/images/image8.png";
+import nft from "../assets/images/nft.png";
+import metaimg from "../assets/images/metaimg.png";
 import Card from "../components/Card";
 
 const Home = () => {
