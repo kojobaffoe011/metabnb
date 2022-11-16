@@ -24,7 +24,7 @@ import Icon from "../components/icon/Icon";
 
 const NavBar = () => {
   return (
-    <div className=" navbar">
+    <div className=" navbar ">
       <Flex className="" spacing={48} ai="center">
         <p className="regular">Restaurant</p>
         <p className="regular">Cottage</p>
@@ -144,7 +144,7 @@ const DropDown = (props) => {
 
 const Cards = () => {
   return (
-    <Grid span={12}>
+    <Grid span={12} className="">
       <GridItem span={3} md={6} sm={12}>
         <Card image={image1} />
       </GridItem>
@@ -200,9 +200,11 @@ const Cards = () => {
 const PlaceToStay = (props) => {
   return (
     <div className=" stay-padding stay-contepng">
-      <NavBar />
-      <NavMobile />
-      <Cards />
+      <Flex stack spacing={75}>
+        <NavBar />
+        <NavMobile />
+        <Cards />
+      </Flex>
     </div>
   );
 };
